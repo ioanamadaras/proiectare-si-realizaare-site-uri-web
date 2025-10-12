@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina personala</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Despre mine</h1>
+        <nav> 
+            <ul>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#hobby">Hobby-uri</a></li>
+                <li><a href="#proiecte">Proiecte</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>         
+        </nav>
+    </header>
+
+    <main>
+        <section id="despre" class="content">
+            <h2>Prezentare generala</h2>
+            <p>Bun venit pe pagina mea personala. Sunt studenta in anul 3 la Facultatea de stiinte economice si gestiunea afacerilor, profilul informatica economica.</p>
+            <p>Anul 3 este ultimul an pentru aceasta specializare si urmeaza sa ma pregatesc pentru lucrarea de licenta.</p>
+
+            <div class="photo-info">
+                <img src="./image.png" alt="imagine de profil">
+                <div>
+                    <h3 id="hobby">Hobby-uri</h3>
+                    <ul>
+                        <li>Web Design-ul</li>
+                        <li>Calatoritul</li>
+                        <li>Baschetul</li>
+                        <li>Handbalul</li>
+                    </ul>
+
+                    <h3>Obiective pentru acest an</h3>
+                    <ol>
+                        <li>Sa termin facultatea</li>
+                        <li>Sa ma angajez</li>
+                    </ol>
+                </div>
+            </div>
+
+            <p>Mai multe informatii despre mine pot fi gasite pe <a href="https://www.linkedin.com/" target="_blank" >LinkedIn</a>.</p>
+
+            <h2>Orarul meu saptamanal</h2>
+            <table>
+                <tr>
+                    <th>Zi</th>
+                    <th>Activitate</th>
+                    <th>Ora</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Luni</td>
+                    <td>Medii de programare</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>Laborator Web</td>
+                    <td>14:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Marti</td>
+                    <td>Inteligenta Artificiala</td>
+                    <td>8:00 - 10:00</td>
+                </tr>
+                <tr>
+                    <td>Algoritmi si Structuri de Date</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>Baze de Date</td>
+                    <td>14:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Miercuri</td>
+                    <td>Ingineria produselor software</td>
+                    <td>14:00 - 16:00</td>
+                </tr>
+            </table>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Resurse utile</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank" >MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" >W3Schools</a></li>
+                <li><a href="https://academy.oracle.com/" target="_blank" >Oracle Academy</a></li>
+                <li><a href="https://chatgpt.com" target="_blank">Chat GPT</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <section id="proiecte">
+        <h2>Proiectele mele</h2>
+        <p>De-a lungul studiilor am lucrat la mai multe proiecte interesante care mi-au dezvoltat abilitatile tehnice si creative.</p>
+        <ul>
+            <li><strong>Baza de date pentru gestiunea unui cabinet de familie</strong> – proiect realizat pentru un curs de baze de date, ce include tabele pentru pacienti, medici, programari si retete medicale.</li>
+            <li><strong>Recrearea unor site-uri populare</strong> – fiind pasionata de design, imi place sa analizez structura site-urilor existente si sa le recreez pentru a exersa HTML, CSS si JavaScript.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Formular de contact</h2>
+        <form>
+            <input type="text" name="nume" placeholder="Nume complet" required>
+            <input type="email" name="email" placeholder="Adresa de mail" required>
+            <textarea name="mesaj" placeholder="Scrie mesajul tau aici..." required></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pagina Personala - MADARAS IOANA</p>
+        <p>Toate drepturile sunt rezervate</p>
+    </footer>
+
+</body>
+</html>
+
+
+<!-- Promptul catre ChatGPT:
+Fa o pagina personala one-page in romana, doar cu HTML si un fisier CSS separat. Vreau un header fix sus, cu linkuri care duc la sectiunile: Hero, About, Projects, Schedule, Contact. In Hero pune prezentare generala, un tagline scurt si o poza portret cu colturi rotunjite. La About lasa 1–2 paragrafe de umplutura si un aside in dreapta numit “Resurse utile”; sub About adauga doua blocuri: “Hobby uri” ca lista simpla si “Obiective” ca lista numerotata. La Projects afiseaza 2–3 carduri identice ca stil, fiecare cu titlu si descriere scurta placeholder. La Schedule pune un tabel cu trei coloane (Zi, Activitate, Ora) si cateva randuri exemplu. La Contact creeaza un formular cu nume, email si mesaj, toate required, si un buton “Trimite”, fara scripturi.
+Despre stil: ca si culori de accent foloseste nuante de mov si fundal gri deschis; pentru sectiuni carduri albe cu umbre discrete si colturi rotunjite
+Sa fie responsive: pe desktop continut + aside in doua coloane, pe mobil totul pe o coloana. Pune stari hover/focus vizibile, contrast bun si atribut alt pe imagini.
+-->
+
+
+<!-- Modificari CSS:
+Am scos culoarea textului care era pusa de doua ori, pe body si pe p, am lasat-o doar pe body. Stilurile pentru #proiecte care se repetau cu cele pentru header, main, footer si section le-am bagat impreuna. Culoarea pentru h2, h3 si #proiecte h2 era aceeasi, asa ca am facut o singura declaratie. Am strans marginile si padding-urile care se repetau la liste si sectiuni si am pastrat doar ce era nevoie. Si cateva chestii mici, ca border-radius sau fundalul alb, le-am pus tot in declaratii comune ca sa fie codul mai curat si mai usor de folosit
+-->
+
+<!-- Modificari HTML:
+Am adaugat id-uri la sectiunile care lipseau (hobby, proiecte, contact) ca sa se potriveasca cu linkurile din header. Am adaugat un alt atribut alt la poza de profil. Am inlocuit tagul aside care era folosit gresit cu un div normal. Am adaptat textul sa se potriveasca cu informatiile despre mine
+-->

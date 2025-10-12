@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina personală - Madaras Ioana</title>
+</head>
+<body>
+
+  <header>
+    <h1>Despre mine</h1>
+    <nav>
+      <ul>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#hobby">Hobby-uri</a></li>
+        <li><a href="#orar">Orar</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="despre">
+      <article>
+        <h2>Prezentare generală</h2>
+        <p>Bun venit pe pagina mea personală. Sunt studentă în anul 3 la Facultatea de Științe Economice, specializarea Informatică Economică. Îmi place să combin abilitățile tehnice cu cele economice.</p>
+        <p>Anul acesta mă pregătesc pentru lucrarea de licență și pentru primul job în domeniul IT sau analiză de date. Îmi place să învăț constant și să lucrez în echipă.</p>
+
+        <figure>
+          <img src="./PHOTO-2025-10-08-11-31-31.jpg" alt="Portret Ioana Madaras" width="300">
+          <figcaption>Ioana Madaras – pasionată de web design și sport.</figcaption>
+        </figure>
+
+        <details>
+          <summary>Mai multe detalii despre studiile mele</summary>
+          <p>Urmez cursuri de Algoritmi, Baze de Date, Inteligență Artificială și Medii de programare. Particip activ la proiecte practice în domeniul web.</p>
+        </details>
+      </article>
+    </section>
+
+    <section id="hobby">
+      <h2>Hobby-uri și obiective</h2>
+
+      <h3>Hobby-uri</h3>
+      <ul>
+        <li>Web Design</li>
+        <li>Călătorii</li>
+        <li>Baschet</li>
+        <li>Handbal</li>
+      </ul>
+
+      <h3>Obiective pentru acest an</h3>
+      <ol>
+        <li>Să finalizez lucrarea de licență</li>
+        <li>Să obțin un job în domeniul IT</li>
+      </ol>
+
+      <aside>
+        <h3>Resurse utile</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+          <br>
+          <a href="#despre">Înapoi la Despre</a>
+        </ul>
+      </aside>
+    </section>
+
+    <article id="orar">
+      <h2>Orarul meu săptămânal</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Zi</th>
+            <th>Activitate</th>
+            <th>Ora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Luni</td>
+            <td>Medii de programare</td>
+            <td>10:00 - 12:00</td>
+          </tr>
+          <tr>
+            <td>Laborator Web</td>
+            <td>14:00 - 16:00</td>
+          </tr>
+          <tr>
+            <td>Marți</td>
+            <td>Inteligență Artificială</td>
+            <td>08:00 - 10:00</td>
+          </tr>
+          <tr>
+            <td>Miercuri</td>
+            <td>Ingineria Produselor Software</td>
+            <td>14:00 - 16:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+  </main>
+
+  <section id="contact">
+    <h2>Formular de contact</h2>
+    <form action="contact.php" method="post">
+      <label for="nume">Nume:</label><br>
+      <input type="text" id="nume" name="nume" placeholder="Nume complet" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="adresa@exemplu.com" required><br><br>
+
+      <label for="mesaj">Mesaj:</label><br>
+      <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea><br><br>
+
+      <button type="submit">Trimite</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pagina personală - Madaras Ioana</p>
+    <p>Toate drepturile sunt rezervate.</p>
+  </footer>
+
+</body>
+</html>
+
+<!-- Explicație:
+Header-ul are titlul principal și meniul de navigare, ca să te poți duce rapid la secțiunile "despre", "hobby-uri", "orar", "contact". 
+În <main> am secțiunea „Despre” cu două paragrafe despre mine, poza mea pusă într-un <figure> ca să fie grupată cu legenda ei (<figcaption>). 
+Dacă vrei mai multe detalii despre studiile mele, poți să dai click pe <details> și se deschide textul ascuns, cu titlul pus în <summary>. 
+Apoi e secțiunea cu hobby-uri și obiective, cu listă neordonată pentru hobby-uri și ordonată pentru obiective. În <aside> am pus linkuri utile care nu sunt parte din fluxul principal, ca să fie lateral și nu încurcă cititul. 
+Am un <article> cu tabelul meu săptămânal, construit cu <table>, antetul cu <thead> și rândurile în <tbody>. Folosesc <th> pentru capul tabelului și <td> pentru datele fiecărei zile. 
+Secțiunea de contact are un formular cu nume, email și mesaj, toate cu placeholder și required, iar butonul de submit trimite datele spre un fișier PHP. 
+La final, footer-ul are copyright-ul și un text simplu că toate drepturile sunt rezervate. 
+Practic, toate tagurile folosite sunt pentru a organiza pagina logic și clar: <section> pentru blocuri tematice, <article> pentru conținut independent, <figure> + <img> + <figcaption> pentru poze cu legenda, <details> + <summary> pentru informații suplimentare care se pot ascunde, <aside> pentru conținut lateral, <table> pentru tabelul cu orarul și listele pentru hobby-uri și obiective. Totul e gândit să fie ușor de citit, clar și semnificativ pentru vizitator. 
+-->
