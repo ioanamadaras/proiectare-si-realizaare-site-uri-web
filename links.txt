@@ -1,0 +1,7 @@
+Tema AI:
+
+Github Pages link:
+https://ioanamadaras.github.io/proiectare-si-realizare-site-uri-web/html-ai/index.html
+
+Github repo link:
+https://github.com/ioanamadaras/proiectare-si-realizare-site-uri-web/tree/main/html-ai

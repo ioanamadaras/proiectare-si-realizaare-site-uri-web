@@ -7,6 +7,8 @@
 </head>
 <body>
 
+  <!-- Header-ul conține titlul principal și meniul de navigare -->
+  <!-- <nav> permite navigarea rapidă către diferite secțiuni ale paginii folosind ancore (#id) -->
   <header>
     <h1>Despre mine</h1>
     <nav>
@@ -21,17 +23,24 @@
 
   <main>
 
+    <!-- Secțiunea Despre include informații personale și imagine -->
     <section id="despre">
       <article>
         <h2>Prezentare generală</h2>
         <p>Bun venit pe pagina mea personală. Sunt studentă în anul 3 la Facultatea de Științe Economice, specializarea Informatică Economică. Îmi place să combin abilitățile tehnice cu cele economice.</p>
         <p>Anul acesta mă pregătesc pentru lucrarea de licență și pentru primul job în domeniul IT sau analiză de date. Îmi place să învăț constant și să lucrez în echipă.</p>
 
+        <!-- Figura grupează imaginea cu legenda ei -->
+        <!-- <figure> este un container pentru conținut media (imagine, video, etc.) -->
+        <!-- <figcaption> oferă o legendă descriptivă pentru imagine -->
         <figure>
           <img src="https://raw.githubusercontent.com/ioanamadaras/proiectare-si-realizaare-site-uri-web/refs/heads/main/HTML-ONLY/PHOTO-2025-10-08-11-31-31.jpg" alt="Portret Ioana Madaras" width="300">
           <figcaption>Ioana Madaras – pasionată de web design și sport.</figcaption>
         </figure>
 
+        <!-- Detalii suplimentare care pot fi ascunse și expandate -->
+        <!-- <details> permite ascunderea unui bloc de conținut care poate fi afișat la click -->
+        <!-- <summary> definește titlul vizibil al secțiunii ascunse -->
         <details>
           <summary>Mai multe detalii despre studiile mele</summary>
           <p>Urmez cursuri de Algoritmi, Baze de Date, Inteligență Artificială și Medii de programare. Particip activ la proiecte practice în domeniul web.</p>
@@ -39,6 +48,8 @@
       </article>
     </section>
 
+    <!-- Secțiunea Hobby-uri și obiective -->
+    <!-- Listă neordonată pentru hobby-uri și listă ordonată pentru obiective -->
     <section id="hobby">
       <h2>Hobby-uri și obiective</h2>
 
@@ -56,17 +67,23 @@
         <li>Să obțin un job în domeniul IT</li>
       </ol>
 
+      <!-- Aside conține resurse utile și navigare laterală -->
+      <!-- <aside> marchează conținut complementar, nu parte din fluxul principal -->
       <aside>
         <h3>Resurse utile</h3>
         <ul>
           <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
           <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
-          <br>
-          <a href="#despre">Înapoi la Despre</a>
         </ul>
+        <br>
+        <a href="#despre">Înapoi la Despre</a>
       </aside>
     </section>
 
+    <!-- Tabelul afișează orarul săptămânal -->
+    <!-- <table> organizează date în rânduri (<tr>) și coloane (<td>, <th>) -->
+    <!-- <thead> conține antetul tabelului, <tbody> conține datele principale -->
+    <!-- Rowspan este folosit pentru a combina celule pe mai multe rânduri, exemplu: "Luni" pentru două activități -->
     <article id="orar">
       <h2>Orarul meu săptămânal</h2>
       <table>
@@ -103,6 +120,8 @@
 
   </main>
 
+  <!-- Secțiunea de contact cu formular -->
+  <!-- Formularul include câmpuri pentru nume, email și mesaj -->
   <section id="contact">
     <h2>Formular de contact</h2>
     <form action="contact.php" method="post">
@@ -119,6 +138,7 @@
     </form>
   </section>
 
+  <!-- Footer-ul conține copyright și un mesaj simplu -->
   <footer>
     <p>&copy; 2025 Pagina personală - Madaras Ioana</p>
     <p>Toate drepturile sunt rezervate.</p>
@@ -126,6 +146,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
 
 <!-- Explicație:
 Header-ul are titlul principal și meniul de navigare, ca să te poți duce rapid la secțiunile "despre", "hobby-uri", "orar", "contact". 
